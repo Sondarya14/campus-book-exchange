@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Book Exchange - Browse Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Common Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+    </nav>
+
+    <header>
+        <h1>Browse Available Books</h1>
+        <p>Find books available from students for exchange or share.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Book Search Simulation -->
+        <section style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+            <h3>Search / Show Specific Book</h3>
+            <input type="text" id="searchInput" placeholder="Enter book title...">
+            <button id="showBookBtn">Show Book</button>
+            <div id="searchResultArea" class="message"></div>
+        </section>
+
+        <!-- Four Book Cards -->
+        <h2>Available Listings</h2>
+        <div class="card-container">
+            <div class="card browse-card">
+                <h3>Operating Systems</h3>
+                <p><strong>Author:</strong> Galvin</p>
+                <p><strong>Subject:</strong> Computer Science</p>
+                <p><strong>Condition:</strong> Good</p>
+                <button class="requestBtn">Mark as Requested</button>
+            </div>
+            <div class="card browse-card">
+                <h3>Engineering Physics</h3>
+                <p><strong>Author:</strong> Malik</p>
+                <p><strong>Subject:</strong> Physics</p>
+                <p><strong>Condition:</strong> Like New</p>
+                <button class="requestBtn">Mark as Requested</button>
+            </div>
+            <div class="card browse-card">
+                <h3>Microprocessors</h3>
+                <p><strong>Author:</strong> Ramesh Gaonkar</p>
+                <p><strong>Subject:</strong> Electronics</p>
+                <p><strong>Condition:</strong> Fair</p>
+                <button class="requestBtn">Mark as Requested</button>
+            </div>
+            <div class="card browse-card" id="cardToModify">
+                <h3>Object Oriented Programming</h3>
+                <p><strong>Author:</strong> E. Balagurusamy</p>
+                <p><strong>Subject:</strong> Computer Science</p>
+                <p><strong>Condition:</strong> Good</p>
+                <button class="requestBtn">Mark as Requested</button>
+                <br><br>
+                <button id="modifyCardBtn">Change Card Text</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Campus Book Exchange</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

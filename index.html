@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Book Exchange - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Common Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+    </nav>
+
+    <!-- Main Heading -->
+    <header id="mainHeader">
+        <h1>Campus Book Exchange</h1>
+        <p>Welcome to our student community platform! Exchange, share, and recycle your textbooks easily.</p>
+    </header>
+
+    <div class="container">
+        <section style="text-align: center; margin-bottom: 20px;">
+            <button id="changeHeadingBtn">Change Main Heading</button>
+            <button id="toggleSectionBtn">Show/Hide Featured Books</button>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section id="featuredSection">
+            <h2 style="text-align: center;">Featured Book Cards</h2>
+            <div class="card-container">
+                <div class="card" id="card1">
+                    <h3>Data Structures & Algorithms</h3>
+                    <p><strong>Author:</strong> Cormen</p>
+                    <p><strong>Category:</strong> Computer Science</p>
+                    <button class="colorChangeBtn">Change Card Color</button>
+                </div>
+                <div class="card" id="card2">
+                    <h3>Engineering Mathematics</h3>
+                    <p><strong>Author:</strong> B.S. Grewal</p>
+                    <p><strong>Category:</strong> Mathematics</p>
+                    <button class="colorChangeBtn">Change Card Color</button>
+                </div>
+                <div class="card" id="card3">
+                    <h3>Digital Logic Design</h3>
+                    <p><strong>Author:</strong> Morris Mano</p>
+                    <p><strong>Category:</strong> Electronics</p>
+                    <button class="colorChangeBtn">Change Card Color</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Campus Book Exchange</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

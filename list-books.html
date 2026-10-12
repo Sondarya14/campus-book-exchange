@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Book Exchange - List a Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Common Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+    </nav>
+
+    <header>
+        <h1 id="formHeading">List a Book for Exchange</h1>
+        <p>Submit your details and book info to share with fellow students.</p>
+    </header>
+
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <button id="changeFontSizeBtn">Change Heading Font Size</button>
+            <button id="toggleFormBtn">Show/Hide Form</button>
+        </div>
+
+        <!-- Submission Form -->
+        <form id="bookForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName">
+
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle">
+
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor">
+
+            <label for="subjectCategory">Subject/Category:</label>
+            <input type="text" id="subjectCategory">
+
+            <label for="bookCondition">Book Condition:</label>
+            <select id="bookCondition">
+                <option value="">Select Condition</option>
+                <option value="New">New</option>
+                <option value="Like New">Like New</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Submit Listing</button>
+            <div id="formMessage"></div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Campus Book Exchange</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
